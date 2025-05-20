@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Entities_back2\**" />
+    <Compile Remove="Models\Entities_back\**" />
+    <Content Remove="Models\Entities_back2\**" />
+    <Content Remove="Models\Entities_back\**" />
+    <EmbeddedResource Remove="Models\Entities_back2\**" />
+    <EmbeddedResource Remove="Models\Entities_back\**" />
+    <None Remove="Models\Entities_back2\**" />
+    <None Remove="Models\Entities_back\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis" Version="1.69.0" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.69.0.3746" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TomatisCRM_GoogleSync_pack">
+      <HintPath>..\..\..\Projects\TomatisCRM_GoogleSync_pack\bin\Debug\net8.0\TomatisCRM_GoogleSync_pack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

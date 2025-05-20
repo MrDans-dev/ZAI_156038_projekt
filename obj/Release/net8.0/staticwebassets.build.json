@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "U1/d7cRbp4XAhsfQclCCqGFR3SzeqCBCQxYmN6+92yc=",
+  "Source": "TomatisCRM_API",
+  "BasePath": "_content/TomatisCRM_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

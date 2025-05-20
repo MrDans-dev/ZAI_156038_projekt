@@ -1,0 +1,3809 @@
+[
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.AppConfigController",
+    "Method": "GetKlients",
+    "RelativePath": "api/appconf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.KlientModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.AppConfigController",
+    "Method": "GetConfById",
+    "RelativePath": "api/appconf/{confID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "confID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.AppConf, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.AppConfigController",
+    "Method": "GetConfByName",
+    "RelativePath": "api/appconf/{confNazwa}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ConfNazwa",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.AppConf, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.AppConfigController",
+    "Method": "PatchAppConfig",
+    "RelativePath": "api/appconf/patch/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "appconf",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.AppConf",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.AppConfigController",
+    "Method": "PutAppConfig",
+    "RelativePath": "api/appconf/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "SconfId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SconfNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SconfWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SconfWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SconfWartoscDt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Klient",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "GetEtapy",
+    "RelativePath": "api/etapy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Etapy, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "Delete",
+    "RelativePath": "api/file/delete/{FileId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FileId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "Download",
+    "RelativePath": "api/file/download/{FileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FileId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "GetFiles",
+    "RelativePath": "api/file/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "GetFileListKnt",
+    "RelativePath": "api/file/list/{KntId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KntId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "GetFileListWiz",
+    "RelativePath": "api/file/list/{KntId}/{WizId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KntId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "WizId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "GetMedia",
+    "RelativePath": "api/file/media/{FileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FileId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.FileManager",
+    "Method": "Upload",
+    "RelativePath": "api/file/upload/{KntId}/{StageId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "StageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.GoogleSync",
+    "Method": "StartSync",
+    "RelativePath": "api/googlesync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "GetKlients",
+    "RelativePath": "api/klient",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.KlientModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "GetKlient",
+    "RelativePath": "api/klient/{kntId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kntId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.KlientModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "GetKlientsPage",
+    "RelativePath": "api/klient/{page};{maxPerPage}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "maxPerPage",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.KlientModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "PostKlient",
+    "RelativePath": "api/klient/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KntId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntAkronim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntTel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataUrodzenia",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStacjonarny",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDoKontaktu",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataKontaktu",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Plikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Klient",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "GetCountKlient",
+    "RelativePath": "api/klient/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "DeleteKlient",
+    "RelativePath": "api/klient/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "PatchKnt",
+    "RelativePath": "api/klient/patch/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "knt",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Klient",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.KlientController",
+    "Method": "PutKlient",
+    "RelativePath": "api/klient/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "KntId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntAkronim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntTel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataUrodzenia",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStacjonarny",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDoKontaktu",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntDataKontaktu",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeModNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KntStatusSlwNavigation.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Plikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Klient",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "GetKntStatus",
+    "RelativePath": "api/KntStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.KntStatus, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.LoginController",
+    "Method": "GetOperatorzy",
+    "RelativePath": "api/login/{login};{pass}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "pass",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.Operatorzy, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "GetOperatorzy",
+    "RelativePath": "api/operatorzy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.Operatorzy, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "GetOperator",
+    "RelativePath": "api/operatorzy/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Operatorzy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "PostOperator",
+    "RelativePath": "api/operatorzy/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Operatorzy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "DeleteOperator",
+    "RelativePath": "api/operatorzy/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "GetHash",
+    "RelativePath": "api/operatorzy/encode/{value}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "PatchSlowniki",
+    "RelativePath": "api/operatorzy/patch/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ope",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Operatorzy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.OperatorController",
+    "Method": "PutOperator",
+    "RelativePath": "api/operatorzy/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Operatorzy",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "GetSlowniki",
+    "RelativePath": "api/slowniki",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "GetSlownikiById",
+    "RelativePath": "api/slowniki/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "PostSlowniki",
+    "RelativePath": "api/slowniki/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Slowniki",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "DeleteSlownik",
+    "RelativePath": "api/slowniki/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "PatchSlowniki",
+    "RelativePath": "api/slowniki/patch/{id}/{OpeId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OpeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "slw",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Slowniki",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.SlownikiController",
+    "Method": "PutSlowniki",
+    "RelativePath": "api/slowniki/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Slowniki",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetWizytyAsync",
+    "RelativePath": "api/wizyty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.WizytyModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetWizytyPageAsync",
+    "RelativePath": "api/wizyty/{page};{maxPerPage};{year};{FromMonth};{ToMonth}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "maxPerPage",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "FromMonth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ToMonth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.WizytyModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetWizyta",
+    "RelativePath": "api/wizyty/{wizId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wizId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.WizytyModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "PostWizyty",
+    "RelativePath": "api/wizyty/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "WizId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntid",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataStart",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataKoniec",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizGooglesync",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizPoprzedniawizId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntAkronim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypSlw",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntTel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizNextEtapId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizNextEtap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntAkronim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntTel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataUrodzenia",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStacjonarny",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDoKontaktu",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataKontaktu",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.Plikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Plikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Wizyty",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetCountWizyta",
+    "RelativePath": "api/wizyty/count/{FromYear}/{FromMonth}/{ToMonth}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FromYear",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "FromMonth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ToMonth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetNexWizDate",
+    "RelativePath": "api/wizyty/datanastepnejwizyty/{kntId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kntId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.DateTime",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "DeleteWizyty",
+    "RelativePath": "api/wizyty/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetConcatFromWiz",
+    "RelativePath": "api/wizyty/DoKontaktu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.DoKontaktu",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetTodayWizits",
+    "RelativePath": "api/wizyty/dzis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.WizytyModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetWizytaByKlient",
+    "RelativePath": "api/wizyty/knt/{KntId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KntId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.WizytyModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "GetNotEndedWiz",
+    "RelativePath": "api/wizyty/niezakonczone",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TomatisCRM_API.Models.Entities.WizytyModel, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "PatchWizyta",
+    "RelativePath": "api/wizyty/patch/{id}/{OpeId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OpeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "wiz",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Wizyty",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TomatisCRM_API.Controllers.WizytyController",
+    "Method": "PutWizyta",
+    "RelativePath": "api/wizyty/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "WizId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntid",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataStart",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataKoniec",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizGooglesync",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizPoprzedniawizId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntAkronim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypSlw",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntTel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKntStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizNextEtapId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizNextEtap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntAkronim",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntTel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataUrodzenia",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStacjonarny",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDoKontaktu",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntDataKontaktu",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeModNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.KntStatusSlwNavigation.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizKnt.Plikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeModNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwTyp",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwWartoscS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwWartoscD",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeMod",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwDataMod",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwNextSlw",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpis",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.Klients",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeLogin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeHaslo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeNazwa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeGoogleapikey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeDataUtw",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.OpeIsAdmin",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.KlientKntOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.KlientKntOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Klient, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.Slownikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Slowniki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.WizytyWizOpeModNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.SlwOpeUtwNavigation.WizytyWizOpeUtwNavigations",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "WizTypNavigation.Wizyties",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Models.Entities.Wizyty, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Plikis",
+        "Type": "System.Collections.Generic.ICollection\u00601[[TomatisCRM_API.Entities.Pliki, TomatisCRM_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TomatisCRM_API.Models.Entities.Wizyty",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
